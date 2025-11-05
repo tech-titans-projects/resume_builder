@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Resume Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+    "docx": "https://esm.sh/docx@8.5.0"
+  }
+}
+</script>
+<style>
+  .resume-content {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: black;
+  }
+  .resume-content * {
+    font-family: Arial, sans-serif !important;
+    color: black !important;
+  }
+  .resume-content .text-xs { font-size: 10px; }
+  .resume-content .text-sm { font-size: 11px; }
+  .resume-content .text-md { font-size: 12px; }
+  .resume-content .text-lg { font-size: 14px; }
+  .resume-content .text-xl { font-size: 16px; }
+  .resume-content .text-2xl { font-size: 18px; }
+  .resume-content .text-4xl { font-size: 24px; }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
